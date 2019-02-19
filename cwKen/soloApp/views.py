@@ -10,7 +10,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-# default music root
+# default root
+def index(request):
+    return HttpResponse("This is a bad request!")
+
+# function called music
 def music(request):
     return HttpResponse("This is a bad request!")
 
